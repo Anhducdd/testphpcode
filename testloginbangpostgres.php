@@ -10,7 +10,6 @@
   	<h2>Login</h2>
   </div>
 <form method="post" action="Connect.php">
-  	<?php include('errors.php'); ?>
   	<div class="input-group">
   		<label>Username</label>
   		<input type="text" name="username" >
