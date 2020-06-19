@@ -11,6 +11,7 @@
   	<h2>Login</h2>
   </div>
 <form method="post" action="Connect.php">
+  	<?php include('errors.php'); ?>
   	<div class="input-group">
   		<label>Username</label>
   		<input type="text" name="username" >
@@ -23,6 +24,5 @@
   		<button type="submit" class="btn" name="Submit">Login</button>
   	</div>
   </form>
-
 </body>
 </html>
