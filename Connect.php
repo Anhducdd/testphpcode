@@ -11,7 +11,7 @@ if (isset($_POST['password'])) {
 	# code...
 	$pass = $_POST['password'];
 }
-$sql = "SELECT * FROM tblAccount WHERE _user='".$username."' AND _pass='".$pass."'";
+$sql = "SELECT * FROM myaccount WHERE _user='".$username."' AND _pass='".$pass."'";
 $result =pg_query($dbconn, $sql);
 $row = pg_num_rows($result);
 if ($row==1)
