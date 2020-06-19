@@ -5,7 +5,7 @@ include('db.php');
 $status="";
 if (isset($_POST['code']) && $_POST['code']!=""){
 $code = $_POST['code'];
-$result = mysqli_query($con,"SELECT * FROM `products` WHERE `code`='$code'");
+$result = mysqli_query($con,"SELECT * FROM products WHERE code='$code'");
 $row = mysqli_fetch_assoc($result);
 $name = $row['name'];
 $code = $row['code'];
