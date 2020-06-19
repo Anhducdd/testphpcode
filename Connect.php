@@ -10,7 +10,7 @@ if (isset($_POST['username'])) {
 
 if (isset($_POST['password'])) {
 	# code...
-	$pass = $_POST['pass'];
+	$pass = $_POST['password'];
 }
 $sql = "SELECT * FROM tblAccount WHERE _user='".$username."' AND _pass='".$pass."'";
 $result =pg_query($dbconn, $sql);
