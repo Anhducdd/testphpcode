@@ -8,7 +8,7 @@ if (isset($_POST['username'])) {
 	$username = $_POST['username'];
 }
 
-if (isset($_POST['pass'])) {
+if (isset($_POST['password'])) {
 	# code...
 	$pass = $_POST['pass'];
 }
