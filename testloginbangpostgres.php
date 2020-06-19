@@ -1,3 +1,4 @@
+<?php include('Connect.php') ?>
 <html>
 <head>
 <title>Login</title>
