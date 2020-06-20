@@ -5,7 +5,7 @@ include('db.php');
 $status="";
 if (isset($_POST['code']) && $_POST['code']!=""){
 $code = $_POST['code'];
-$result = mysqli_query($con,"SELECT * FROM products WHERE code='$code'");
+$result = pg_query($db_connect,"SELECT * FROM products WHERE code='$code'");
 $row = mysqli_fetch_assoc($result);
 $name = $row['name'];
 $code = $row['code'];
@@ -57,7 +57,7 @@ $cart_count = count(array_keys($_SESSION["shopping_cart"]));
 <?php
 }
 
-$result = mysqli_query($con,"SELECT * FROM `products`");
+$result = pg_query($db_connect,"SELECT * FROM `products`");
 while($row = mysqli_fetch_assoc($result)){
 		echo "<div class='product_wrapper'>
 			  <form method='post' action=''>
