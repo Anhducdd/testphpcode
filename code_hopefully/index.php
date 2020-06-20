@@ -16,7 +16,7 @@
   <div class="container">
     <div class="col-sm-6" style="padding-top:50px;">
         <div class="well">
-            <h2>Simple table listing using PHP and Postgres database</h2>
+            <h2>List of toys are build by php and Postgesql</h2>
         </div>
         <table id="employee_grid" class="table" width="100%" cellspacing="0">
             <thead>
