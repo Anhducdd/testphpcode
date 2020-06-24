@@ -13,10 +13,12 @@ $stmt = $db->prepare($sql);
 $stmt->execute();
 $user = $stmt->fetch();
 
-if (count($user) > 0){
+if ($user){
     $_SESSION[AUTH] = $user;
     var_dump($_SESSION[AUTH]);
     header('Location: index.php');
+}else{
+    header('Location: login.php');
 }
 
 
