@@ -1,6 +1,7 @@
 <?php
 try {
-    $db = new PDO('pgsql:host=ec2-52-87-135-240.compute-1.amazonaws.com;dbname=dvjv9f6i58b5d','jyalqhpnugmukb','12fa02ab206be164f948547f7a0f236c5d044bb31efd2db2b9621c9561f5027b');
+    $db = new  pg_connect("host=ec2-34-197-141-7.compute-1.amazonaws.com
+ dbname=db7lrj93isfe3h user=hlphipxlcbjlwm password=ea2f7fd249414dbe1e27433c83057cc931dd53a782295ac070c40d29e9d8a94f");
     return $db;
 }catch (Exception $e){
     echo "Kết nối ko thành công";
