@@ -18,7 +18,7 @@ require_once 'db.php';
 <div class="wrapper animated bounce">
   <h1>Login</h1>
   <hr>
-  <form>
+  <form action="post-login.php" method="post">
     <label id="icon" for="username"><i class="fa fa-user"></i></label>
     <input type="text" placeholder="Username" id="username" name="username">
     <label id="icon" for="password"><i class="fa fa-key"></i></label>
