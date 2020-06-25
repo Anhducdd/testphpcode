@@ -1,7 +1,7 @@
 <?php
     session_start();
     require_once "databaseconnect.php";
-    require_once 'util.php';
+    require_once 'utilme.php';
     $user = $_SESSION[AUTH];
     if (!isset($user)){
         header('Location: login.php');
