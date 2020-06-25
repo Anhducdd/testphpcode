@@ -305,7 +305,7 @@
               <div class="image" style="background-image:url('<?= $result['image'] ?>');"></div>
               <div class="container-information">
                 <div class="title"><?= $result['name'] ?>(<?= $result['price'] ?>$)</div>
-                <div class="description">Siebdruck print<br>100% cotton<br>Color available: black on gray<br>Size available: XL, XXL</div>
+                <div class="description"></div>
               </div>
               <div class="sharing cf">
                 <a href="https://www.facebook.com/sharer/sharer.php?u=https://codepen.io/mattiabericchia/pen/myQNEV" class="fl-l" target="_blank"><i class="fa fa-facebook"></i></a>
