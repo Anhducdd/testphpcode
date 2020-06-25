@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'db.php';
+require_once 'databaseconnect.php';
 require_once 'util.php';
 
 $username = rtrim($_POST['username']);
