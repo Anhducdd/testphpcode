@@ -14,31 +14,20 @@ require_once 'db.php';
     <title>Login</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-4"></div>
-            <div class="col-4">
-                <h1 class="title">LOGIN</h1>
-            </div>
-            <div class="col-4"></div>
-        </div>
-        <div class="row">
-            <div class="col-4"></div>
-            <div class="col-4">
-                <form action="post-login.php" method="post">
-                    <div class="form-group">
-                        <label for="username">User</label>
-                        <input type="text" name="username" class="form-control" id="username">
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" class="form-control" id="password">
-                    </div>
-                    <button class="btn btn-primary" type="submit">LOGIN</button>
-                </form>
-            </div>
-            <div class="col-4"></div>
-        </div>
-    </div>
+   
+<div class="wrapper animated bounce">
+  <h1>Codepen.io</h1>
+  <hr>
+  <form>
+    <label id="icon" for="username"><i class="fa fa-user"></i></label>
+    <input type="text" placeholder="Username" id="username" name="username">
+    <label id="icon" for="password"><i class="fa fa-key"></i></label>
+    <input type="password" placeholder="Password" id="password" name="password">
+    <input type="submit" value="Sign In">
+    <hr>
+    <div class="crtacc"><a href="#">Create Account</a></div>
+  </form>
+</div>
+
 </body>
 </html>
